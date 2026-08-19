@@ -10,6 +10,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: contact
+    description: Customer inquiry operations
 paths:
   /healthz:
     get:
@@ -24,6 +26,66 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /contact:
+    post:
+      operationId: submitContact
+      tags: [contact]
+      summary: Submit a contact request
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ContactInput"
+      responses:
+        "200":
+          description: Request accepted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SubmissionResponse"
+        "400":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "429":
+          description: Too many requests
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+  /project-inquiries:
+    post:
+      operationId: submitProjectInquiry
+      tags: [contact]
+      summary: Submit a project inquiry
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProjectInquiryInput"
+      responses:
+        "200":
+          description: Inquiry accepted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SubmissionResponse"
+        "400":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "429":
+          description: Too many requests
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
 components:
   schemas:
     HealthStatus:
@@ -33,4 +95,46 @@ components:
           type: string
       required:
         - status
+    ContactInput:
+      type: object
+      required: [firstName, lastName, phone, email, subject, service, message, consent]
+      properties:
+        firstName: { type: string, minLength: 2, maxLength: 80 }
+        lastName: { type: string, minLength: 2, maxLength: 80 }
+        company: { type: string, maxLength: 120 }
+        phone: { type: string, minLength: 6, maxLength: 40 }
+        email: { type: string, pattern: "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$", maxLength: 160 }
+        subject: { type: string, minLength: 2, maxLength: 160 }
+        service: { type: string, minLength: 2, maxLength: 80 }
+        message: { type: string, minLength: 10, maxLength: 3000 }
+        consent: { type: boolean }
+        website: { type: string, maxLength: 0 }
+    ProjectInquiryInput:
+      type: object
+      required: [customerType, contactName, phone, email, address, projectType, services, phase, description, timeframe, consent]
+      properties:
+        customerType: { type: string, enum: [privat, firma] }
+        company: { type: string, maxLength: 160 }
+        contactName: { type: string, minLength: 2, maxLength: 120 }
+        phone: { type: string, minLength: 6, maxLength: 40 }
+        email: { type: string, pattern: "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$", maxLength: 160 }
+        address: { type: string, minLength: 5, maxLength: 240 }
+        projectType: { type: string, minLength: 2, maxLength: 100 }
+        services: { type: string, minLength: 2, maxLength: 500 }
+        phase: { type: string, enum: [neubau, sanierung, reparatur, wartung] }
+        description: { type: string, minLength: 10, maxLength: 4000 }
+        timeframe: { type: string, minLength: 2, maxLength: 120 }
+        consent: { type: boolean }
+        website: { type: string, maxLength: 0 }
+    SubmissionResponse:
+      type: object
+      required: [success, message]
+      properties:
+        success: { type: boolean }
+        message: { type: string }
+    ErrorResponse:
+      type: object
+      required: [error]
+      properties:
+        error: { type: string }
 

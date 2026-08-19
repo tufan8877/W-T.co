@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "WTÖ Wärme Technik Österreich"
+description = "A full multi-page corporate website for WTÖ – Wärme Technik Österreich, presenting building, plant and energy technology services with professional project and contact inquiries."
+version = "1.0.0"
+id = "artifacts/wto-website"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18526
+
+[services.development]
+run = "pnpm --filter @workspace/wto-website run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/wto-website", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/wto-website/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18526"
+BASE_PATH = "/"
