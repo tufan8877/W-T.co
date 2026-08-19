@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: wto-website
+    runtime: node
+    buildCommand: pnpm install --frozen-lockfile && pnpm run build:render
+    startCommand: pnpm start:render
+    envVars:
+      - key: NODE_VERSION
+        value: "20"

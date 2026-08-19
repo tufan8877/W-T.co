@@ -1,0 +1,1350 @@
+Erstelle für mich eine **professionelle, moderne und technisch hochwertige Unternehmenswebsite** für meine Firma:
+
+# WTÖ – Wärme Technik Österreich
+
+Die Website darf **keine One-Page-Website** sein. Es soll eine vollständige, mehrseitige Firmenwebsite mit sauberer Seitenstruktur, professionellem Backend und späterer einfacher Erweiterbarkeit sein.
+
+Ich werde dir mein **Logo separat hochladen**. Verwende dieses Logo konsequent im Header, Footer, Favicon-Bereich und überall dort, wo es optisch sinnvoll ist.
+
+## Ziel der Website
+
+WTÖ soll wie ein **großes, seriöses Unternehmen für Gebäude-, Anlagen- und Energietechnik** wirken.
+
+Die Website soll vom Qualitätsniveau her an moderne technische Unternehmen wie große Gebäudetechnik-, Energie- und Facility-Service-Unternehmen erinnern.
+
+Designrichtung:
+
+* modern
+* hochwertig
+* technisch
+* professionell
+* seriös
+* klar
+* nicht verspielt
+* nicht wie ein kleiner Handwerkerbetrieb
+* keine überladene Website
+* großzügige Abstände
+* hochwertige Typografie
+* starke Bilder
+* klare Icons
+* professionelle Animationen
+* hochwertige Hover-Effekte
+* responsive für Desktop, Tablet und Smartphone
+* sehr gute Darstellung auf iPhone
+* moderne Navigation
+* keine billig wirkenden Templates
+* keine übertriebenen Farbverläufe
+* keine unnötigen 3D-Effekte
+
+Die Website soll den Eindruck vermitteln:
+
+**Planung, Technik, Kompetenz, Zuverlässigkeit und professionelle Ausführung aus einer Hand.**
+
+---
+
+# Firmenname
+
+**WTÖ – Wärme Technik Österreich**
+
+Unternehmensbeschreibung / Positionierung:
+
+**Gebäude- · Anlagen- · Energietechnik**
+
+Möglicher Claim:
+
+**Planung. Errichtung. Instandhaltung. Service.**
+
+Alternativ kann an geeigneten Stellen verwendet werden:
+
+**Technik für Gebäude. Energie für morgen.**
+
+---
+
+# Technischer Aufbau
+
+Die Website darf **keine reine statische Website** sein.
+
+Ich möchte eine professionelle Full-Stack-Webanwendung.
+
+Bevorzugter Stack:
+
+## Backend
+
+* Node.js
+* TypeScript
+* Express.js
+* REST API
+* saubere modulare Serverstruktur
+* Environment Variables über `.env`
+* Security Middleware
+* Helmet
+* CORS
+* Rate Limiting
+* Request Validation
+* zentrale Error Handler
+* Logging
+* vorbereitet für spätere Datenbankintegration
+
+## Frontend
+
+Bevorzugt:
+
+* React
+* TypeScript
+* Vite
+
+Alternativ kann eine andere moderne React-basierte Struktur verwendet werden, wenn sie technisch sinnvoller ist.
+
+Styling:
+
+* modernes CSS
+* Tailwind CSS oder sauberes modulares CSS
+* responsive Design
+* professionelle Breakpoints
+* Animationen nur dezent
+* keine übertriebene Animation
+
+JavaScript und TypeScript dürfen verwendet werden.
+
+Python darf verwendet werden, falls es für Bildoptimierung, Tools, Skripte oder spätere Funktionen sinnvoll ist.
+
+---
+
+# Wichtig für Deployment
+
+Ich möchte das komplette Projekt später als **ZIP-Datei herunterladen** und auf **Render.com als Web Service deployen**.
+
+Deshalb muss das Projekt Render-kompatibel sein.
+
+Erstelle:
+
+* funktionierende `package.json`
+* Build Script
+* Start Script
+* Production Build
+* Server soll den gebauten Frontend-Ordner ausliefern
+* PORT muss über `process.env.PORT` funktionieren
+* Render-kompatible Serverkonfiguration
+* keine hardcodierten localhost URLs in Production
+* `.env.example`
+* `.gitignore`
+* README.md mit Deployment-Anleitung
+
+Beispiel:
+
+Build:
+`npm install && npm run build`
+
+Start:
+`npm start`
+
+Der Node-Server soll sowohl API als auch Frontend bedienen.
+
+---
+
+# Projektstruktur
+
+Verwende eine saubere professionelle Struktur, z. B.:
+
+`/client`
+
+`/server`
+
+`/shared`
+
+`/public`
+
+oder eine vergleichbar professionelle Struktur.
+
+Keine chaotische Dateistruktur.
+
+---
+
+# Seitenstruktur
+
+Die Website MUSS aus mehreren separaten Seiten bestehen.
+
+## 1. Startseite
+
+Route:
+
+`/`
+
+Die Startseite soll sehr hochwertig aufgebaut sein.
+
+### Hero-Bereich
+
+Großes professionelles Hintergrundbild oder hochwertiges Gebäudetechnik-/Anlagenbau-Motiv.
+
+Kein Standard-Handwerkerfoto.
+
+Bevorzugt:
+
+* Technikzentrale
+* moderne Gebäudetechnik
+* Rohrleitungsanlagen
+* Heizungszentrale
+* Energieanlage
+* Wärmepumpe
+* moderne technische Infrastruktur
+
+Text:
+
+**WTÖ – Wärme Technik Österreich**
+
+Headline:
+
+**Technik für Gebäude. Energie für morgen.**
+
+Subheadline:
+
+**Planung, Errichtung, Wartung und Instandhaltung moderner Gebäude-, Anlagen- und Energiesysteme.**
+
+Buttons:
+
+**Unsere Leistungen**
+
+und
+
+**Projekt anfragen**
+
+---
+
+Danach eine professionelle Leistungsübersicht mit großen Karten.
+
+Bereiche:
+
+* Gebäudetechnik
+* Anlagenbau
+* Heizung & Wärme
+* Gasgeräte-Service
+* Wärmepumpen
+* Klima & Kälte
+* Lüftung
+* Sanitär & Wasser
+* Solarthermie
+* Photovoltaik
+* Kanaltechnik
+* Service & Instandhaltung
+
+---
+
+Danach Abschnitt:
+
+## Alles aus einer Hand
+
+Textinhalt sinngemäß:
+
+WTÖ begleitet technische Anlagen über ihren gesamten Lebenszyklus – von der Planung über die Errichtung bis zur Wartung, Reparatur und Modernisierung.
+
+Darstellung als Prozess:
+
+**Planung → Errichtung → Inbetriebnahme → Wartung → Instandhaltung → Modernisierung**
+
+---
+
+Danach:
+
+## Unsere Kompetenzbereiche
+
+Mit professionellen technischen Icons.
+
+---
+
+Danach:
+
+## Warum WTÖ?
+
+Punkte:
+
+* ganzheitliche technische Lösungen
+* Planung und Umsetzung aus einer Hand
+* moderne und energieeffiziente Systeme
+* zuverlässiger Service
+* transparente Kommunikation
+* Lösungen für Privatkunden, Hausverwaltungen, Gewerbe und Industrie
+
+---
+
+Danach CTA:
+
+**Sie planen ein Projekt oder benötigen technischen Service?**
+
+Button:
+
+**Jetzt Kontakt aufnehmen**
+
+---
+
+# 2. Leistungen
+
+Route:
+
+`/leistungen`
+
+Übersichtsseite aller Leistungen.
+
+Jede Leistung soll eine eigene Detailseite erhalten.
+
+---
+
+# 3. Gebäudetechnik
+
+Route:
+
+`/leistungen/gebaeudetechnik`
+
+Inhalte:
+
+* technische Gebäudeausrüstung
+* Heizung
+* Sanitär
+* Gas
+* Klima
+* Lüftung
+* Warmwasser
+* Regelungs- und Anlagentechnik
+* Modernisierung bestehender Anlagen
+
+---
+
+# 4. Anlagenbau
+
+Route:
+
+`/leistungen/anlagenbau`
+
+Inhalte:
+
+* Planung kompletter Anlagen
+* technische Auslegung
+* Errichtung
+* Umbauten
+* Sanierung
+* Erweiterung
+* Inbetriebnahme
+* Anlagenoptimierung
+* Dokumentation
+* laufende Betreuung
+
+---
+
+# 5. Heizung & Wärme
+
+Route:
+
+`/leistungen/heizung`
+
+Inhalte:
+
+* Heizungsanlagen
+* Gasheizungen
+* Heizungszentralen
+* Warmwasserbereitung
+* Fußbodenheizung
+* Heizkörper
+* hydraulischer Abgleich
+* Regelungstechnik
+* Modernisierung
+* Energieoptimierung
+
+---
+
+# 6. Gasgeräte-Service
+
+Route:
+
+`/leistungen/gasgeraete-service`
+
+Dieser Bereich soll besonders professionell sein, da Gasgeräte-Service ein wichtiger Schwerpunkt des Unternehmens ist.
+
+Inhalte:
+
+* Thermenwartung
+* Gasgerätewartung
+* Reparatur
+* Fehlerdiagnose
+* Störungsbehebung
+* Ersatzteile
+* Geräteüberprüfung
+* Heizwert- und Brennwertgeräte
+* Wartung verschiedener Hersteller
+* Anlagenkontrolle
+
+Kein falsches Versprechen wie „für alle Hersteller“, falls das rechtlich oder tatsächlich nicht garantiert werden kann.
+
+---
+
+# 7. Wärmepumpen
+
+Route:
+
+`/leistungen/waermepumpen`
+
+Inhalte:
+
+* Luft/Wasser-Wärmepumpen
+* Sole/Wasser
+* Wasser/Wasser
+* Planung
+* Dimensionierung
+* Installation
+* Inbetriebnahme
+* Wartung
+* Reparatur
+* Optimierung
+* Hybridanlagen
+
+---
+
+# 8. Klima & Kälte
+
+Route:
+
+`/leistungen/klima`
+
+Inhalte:
+
+* Klimaanlagen
+* Split-Klimaanlagen
+* Multi-Split
+* gewerbliche Anlagen
+* Planung
+* Montage
+* Wartung
+* Reinigung
+* Reparatur
+* Störungsdiagnose
+
+---
+
+# 9. Lüftung
+
+Route:
+
+`/leistungen/lueftung`
+
+Inhalte:
+
+* Lüftungsanlagen
+* Wohnraumlüftung
+* Abluftanlagen
+* Zuluftanlagen
+* Lüftungszentralen
+* Wartung
+* Reinigung
+* Filterwechsel
+* Reparatur
+* Optimierung
+
+---
+
+# 10. Sanitär & Wasser
+
+Route:
+
+`/leistungen/sanitaer`
+
+Inhalte:
+
+* Wasserinstallationen
+* Sanitärinstallationen
+* Badezimmer
+* Armaturen
+* Leitungen
+* Warmwasser
+* Reparaturen
+* Sanierungen
+* Umbauten
+* technische Installationen
+
+---
+
+# 11. Solarthermie
+
+Route:
+
+`/leistungen/solarthermie`
+
+Inhalte:
+
+* Planung
+* Installation
+* Warmwasserbereitung
+* Heizungsunterstützung
+* Wartung
+* Reparatur
+* Anlagenoptimierung
+
+---
+
+# 12. Photovoltaik
+
+Route:
+
+`/leistungen/photovoltaik`
+
+Inhalte:
+
+* Planung
+* PV-Anlagen
+* Energieerzeugung
+* Wechselrichter
+* Speicherlösungen
+* Monitoring
+* Wartung
+* Optimierung
+
+Formuliere rechtlich sauber und stelle keine Leistungen dar, die ohne entsprechende Gewerbeberechtigung nicht ausgeführt werden dürfen.
+
+---
+
+# 13. Kanaltechnik
+
+Route:
+
+`/leistungen/kanaltechnik`
+
+Dieser Bereich soll sehr hochwertig dargestellt werden.
+
+Leistungen:
+
+* Verstopfungsbehebung
+* Rohrreinigung
+* Kanalreinigung
+* Hochdruckspülung
+* Kanal-TV-Inspektion
+* Kamerabefahrung
+* Leitungsortung
+* Kanalzustandsprüfung
+* Kanalwartung
+* Kanalsanierung
+* Rohrsanierung
+
+Optional als Unterbereiche:
+
+### Rohr- & Kanalreinigung
+
+### TV-Inspektion
+
+### Kanalspülung
+
+### Kanalsanierung
+
+---
+
+# 14. Service & Instandhaltung
+
+Route:
+
+`/leistungen/service`
+
+Inhalte:
+
+* Wartung
+* Inspektion
+* Reparatur
+* Fehlerdiagnose
+* Störungsbehebung
+* Anlagenbetreuung
+* präventive Instandhaltung
+* technische Dokumentation
+* Modernisierung
+* Ersatzteilmanagement
+* Optimierung von Anlagen
+
+---
+
+# 15. Planung & Projektierung
+
+Route:
+
+`/planung`
+
+Diese Seite ist sehr wichtig.
+
+WTÖ soll nicht nur wie ein Reparaturunternehmen wirken.
+
+Inhalte:
+
+* technische Beratung
+* Planung
+* Projektierung
+* Dimensionierung
+* Konzepterstellung
+* Bestandsaufnahme
+* Anlagenoptimierung
+* Modernisierung
+* Projektbegleitung
+* Koordination
+* Dokumentation
+
+---
+
+# 16. Branchen / Kunden
+
+Route:
+
+`/branchen`
+
+Zielgruppen:
+
+* Privatkunden
+* Hausverwaltungen
+* Wohnhausanlagen
+* Gewerbebetriebe
+* Industrie
+* Bauträger
+* Generalunternehmer
+* Gastronomie
+* Hotels
+* Büros
+* öffentliche Gebäude
+
+Jede Zielgruppe soll professionell beschrieben werden.
+
+---
+
+# 17. Über uns
+
+Route:
+
+`/unternehmen`
+
+Headline:
+
+**Technische Lösungen mit Verantwortung**
+
+Inhalte:
+
+WTÖ – Wärme Technik Österreich steht für moderne Gebäude-, Anlagen- und Energietechnik.
+
+Schwerpunkte:
+
+* Qualität
+* Zuverlässigkeit
+* technische Kompetenz
+* langfristige Kundenbeziehungen
+* nachhaltige Lösungen
+* professionelle Projektabwicklung
+
+Bitte keine erfundenen Firmengründungsjahre, Mitarbeiterzahlen, Zertifizierungen oder Referenzen einbauen.
+
+Wenn Daten noch nicht bekannt sind, lieber neutral formulieren.
+
+---
+
+# 18. Karriere
+
+Route:
+
+`/karriere`
+
+Professionelle Karriereseite.
+
+Bereiche:
+
+* Initiativbewerbung
+* Servicetechniker
+* Installateur / Monteur
+* HKLS-Techniker
+* Kanaltechniker
+* Projekttechniker
+* Lehrlinge
+
+Noch keine echten Stellen ausschreiben, sofern keine vorhanden sind.
+
+Möglichkeit für Initiativbewerbung.
+
+---
+
+# 19. Kontakt
+
+Route:
+
+`/kontakt`
+
+Professionelles Kontaktformular.
+
+Felder:
+
+* Vorname
+* Nachname
+* Firma optional
+* Telefonnummer
+* E-Mail
+* Betreff
+* Leistungsbereich
+* Nachricht
+* Datenschutz-Checkbox
+
+Leistungsbereich Dropdown:
+
+* Heizung
+* Gasgeräte-Service
+* Wärmepumpe
+* Sanitär
+* Klima
+* Lüftung
+* Anlagenbau
+* Photovoltaik
+* Solar
+* Kanaltechnik
+* Wartung & Service
+* Planung
+* Sonstiges
+
+Backend Endpoint:
+
+`POST /api/contact`
+
+Mit:
+
+* Validierung
+* Rate Limiting
+* Honeypot Spam Protection
+* serverseitiger Prüfung
+* Fehlermeldungen
+* Success Message
+
+E-Mail-Versand vorbereiten, z. B. mit Nodemailer.
+
+SMTP-Daten ausschließlich über Environment Variables.
+
+Beispiel:
+
+`SMTP_HOST`
+
+`SMTP_PORT`
+
+`SMTP_USER`
+
+`SMTP_PASS`
+
+`CONTACT_EMAIL`
+
+---
+
+# 20. Projektanfrage
+
+Route:
+
+`/projektanfrage`
+
+Separates ausführliches Formular für größere Projekte.
+
+Felder:
+
+* Privat / Firma
+* Firmenname
+* Ansprechpartner
+* Telefonnummer
+* E-Mail
+* Projektadresse
+* Projektart
+* gewünschte Leistungen
+* Neubau / Sanierung / Reparatur / Wartung
+* Projektbeschreibung
+* gewünschter Zeitraum
+* Möglichkeit Dateien oder Fotos hochzuladen
+
+Upload technisch vorbereiten.
+
+Dateigröße begrenzen.
+
+Nur sichere Dateitypen zulassen.
+
+---
+
+# 21. FAQ
+
+Route:
+
+`/faq`
+
+Fragen beispielsweise:
+
+* Welche Leistungen bietet WTÖ?
+* Übernimmt WTÖ komplette Anlagen?
+* Kann WTÖ bestehende Anlagen sanieren?
+* Bietet WTÖ Wartungsverträge an?
+* Werden auch Hausverwaltungen betreut?
+* Bietet WTÖ Kanal-TV-Inspektionen an?
+* Werden Wärmepumpen geplant?
+* Bietet WTÖ Klima- und Lüftungstechnik?
+* Können größere Projekte angefragt werden?
+
+FAQ mit Accordion.
+
+Schema.org FAQ Structured Data verwenden, falls SEO-technisch sinnvoll.
+
+---
+
+# 22. Impressum
+
+Route:
+
+`/impressum`
+
+Erstelle eine professionelle österreichische Impressumsseite.
+
+Keine erfundenen Daten.
+
+Verwende Platzhalter, die später leicht ersetzt werden können:
+
+[FIRMENNAME]
+
+[INHABER / GESCHÄFTSFÜHRER]
+
+[ANSCHRIFT]
+
+[PLZ]
+
+[ORT]
+
+[TELEFON]
+
+[E-MAIL]
+
+[FIRMENBUCHNUMMER]
+
+[FIRMENBUCHGERICHT]
+
+[UID]
+
+[GEWERBEBEHÖRDE]
+
+[MITGLIEDSCHAFT WKO]
+
+Platzhalter sichtbar im Code kennzeichnen.
+
+---
+
+# 23. Datenschutz
+
+Route:
+
+`/datenschutz`
+
+Ausführliche DSGVO-konforme Datenschutzseite als Vorlage.
+
+Berücksichtige:
+
+* Server Logs
+* Kontaktformular
+* Projektanfrage
+* Cookies
+* Hosting
+* SMTP / E-Mail
+* technische Sicherheitsmaßnahmen
+* Betroffenenrechte
+* Speicherdauer
+* SSL
+* Drittanbieter
+
+Keine erfundenen Rechtsdaten.
+
+Mit klar markierten Platzhaltern.
+
+---
+
+# 24. Cookie-Einstellungen
+
+Erstelle ein professionelles Cookie Consent System.
+
+Wenn ausschließlich technisch notwendige Cookies verwendet werden, soll kein unnötiger Marketing-Cookie-Banner erscheinen.
+
+Falls Analytics oder externe Dienste eingebaut werden, dürfen diese erst nach Einwilligung geladen werden.
+
+Bereite technisch vor:
+
+* notwendige Cookies
+* Statistik
+* Marketing
+
+Aber standardmäßig keine unnötigen Tracker aktivieren.
+
+---
+
+# Navigation
+
+Desktop-Navigation:
+
+**Startseite**
+
+**Leistungen**
+
+Dropdown oder Mega Menu:
+
+* Gebäudetechnik
+* Anlagenbau
+* Heizung
+* Gasgeräte-Service
+* Wärmepumpen
+* Klima
+* Lüftung
+* Sanitär
+* Solarthermie
+* Photovoltaik
+* Kanaltechnik
+* Service & Instandhaltung
+
+Danach:
+
+**Planung**
+
+**Branchen**
+
+**Unternehmen**
+
+**Karriere**
+
+**Kontakt**
+
+Hervorgehobener Button:
+
+**Projekt anfragen**
+
+---
+
+# Mobile Navigation
+
+Professionelles Mobile-Menü.
+
+Keine schlechte Standard-Hamburger-Lösung.
+
+Sauberes Slide-Menü oder Fullscreen-Menü.
+
+Unterpunkte müssen aufklappbar sein.
+
+---
+
+# Header
+
+Sticky Header.
+
+Beim Scrollen leicht kompakter.
+
+Logo links.
+
+Navigation zentral oder rechts.
+
+CTA Button.
+
+---
+
+# Footer
+
+Professioneller großer Unternehmensfooter.
+
+Bereiche:
+
+## WTÖ
+
+Kurze Unternehmensbeschreibung.
+
+## Leistungen
+
+Links zu den wichtigsten Leistungen.
+
+## Unternehmen
+
+* Über uns
+* Karriere
+* Kontakt
+
+## Rechtliches
+
+* Impressum
+* Datenschutz
+* Cookie-Einstellungen
+
+Optional:
+
+* Telefon
+* E-Mail
+* Öffnungszeiten
+
+Keine Social-Media-Links erfinden.
+
+---
+
+# Designsystem
+
+Verwende das hochgeladene WTÖ-Logo als Ausgangspunkt.
+
+Farben sollen aus dem Logo abgeleitet werden.
+
+Bevorzugt:
+
+* tiefes Dunkelblau
+* Weiß
+* dezentes Grau
+* Orange / Rot als Wärme-Akzent
+* Türkis / Blau als Energie- oder Wasser-Akzent
+
+Nicht zu bunt.
+
+Die Website muss trotz der unterschiedlichen Leistungsbereiche eine einheitliche Corporate Identity haben.
+
+---
+
+# Schriftarten
+
+Professionelle moderne Sans-Serif.
+
+Beispiele:
+
+* Inter
+* Manrope
+* IBM Plex Sans
+* Plus Jakarta Sans
+
+Keine verspielten Fonts.
+
+---
+
+# Bilder
+
+Verwende hochwertige Platzhalterbilder oder frei verfügbare professionelle Technikbilder.
+
+Keine sichtbaren Wasserzeichen.
+
+Keine offensichtlich generischen Stockfotos mit lächelnden Handwerkern vor weißem Hintergrund.
+
+Bevorzugte Motive:
+
+* technische Anlagen
+* Heizungszentralen
+* Rohrleitungen
+* Gebäudetechnik
+* Wärmepumpen
+* Solar
+* Photovoltaik
+* Lüftung
+* Klima
+* Kanalinspektion
+* moderne Technikräume
+* technische Planung
+
+---
+
+# SEO
+
+Jede Seite benötigt:
+
+* individuellen Title
+* Meta Description
+* Open Graph
+* Canonical URL Vorbereitung
+* saubere H1-H3 Struktur
+* semantisches HTML
+* Alt-Texte
+* sprechende URLs
+* Sitemap
+* robots.txt
+
+Erstelle:
+
+`sitemap.xml`
+
+`robots.txt`
+
+Structured Data für:
+
+* Organization
+* LocalBusiness
+* Service
+
+Keine falschen Bewertungen oder Sterne einbauen.
+
+---
+
+# Performance
+
+Ziel:
+
+* sehr schnelle Ladezeiten
+* Lazy Loading
+* optimierte Bilder
+* moderne Bildformate
+* Code Splitting
+* möglichst gute Lighthouse-Werte
+* möglichst wenig unnötiges JavaScript
+
+---
+
+# Accessibility
+
+Berücksichtige:
+
+* WCAG-Grundlagen
+* Tastaturbedienung
+* gute Kontraste
+* ARIA Labels
+* Fokuszustände
+* sinnvolle Alt-Texte
+* semantisches HTML
+
+---
+
+# Sicherheit
+
+Backend:
+
+* Helmet
+* Rate Limiting
+* Input Sanitization
+* serverseitige Validierung
+* CORS
+* sichere HTTP Header
+* Upload-Beschränkungen
+* keine Secrets im Frontend
+* `.env`
+* keine sensiblen Daten ins Git Repository
+
+---
+
+# Fehlerseiten
+
+Erstelle:
+
+## 404 Seite
+
+Professionell im WTÖ-Design.
+
+Text:
+
+**Diese Seite wurde nicht gefunden.**
+
+Button:
+
+**Zur Startseite**
+
+---
+
+## 500 Seite
+
+Professionelle Fehlermeldung.
+
+Keine Serverdetails oder Stack Traces im Frontend anzeigen.
+
+---
+
+# Ladezustände
+
+Professionelle Loading States / Skeletons, falls benötigt.
+
+Keine billigen Spinner auf jeder Seite.
+
+---
+
+# Kontakt-Komponenten
+
+Auf mobilen Geräten darf ein dezenter Kontakt-Button verfügbar sein.
+
+Zum Beispiel:
+
+**Kontakt**
+
+oder
+
+**Projekt anfragen**
+
+Nicht dauerhaft mehrere störende Floating Buttons.
+
+---
+
+# Admin-Vorbereitung
+
+Noch kein vollständiges CMS erforderlich.
+
+Aber Architektur so vorbereiten, dass später folgende Bereiche ergänzt werden können:
+
+* Admin Login
+* Referenzen
+* Projekte
+* Stellenanzeigen
+* Blog / News
+* Kontaktanfragen
+* Projektanfragen
+
+Der Code soll modular aufgebaut sein.
+
+---
+
+# Datenbank-Vorbereitung
+
+Noch keine Datenbank zwingend erforderlich.
+
+Aber die Struktur darf später problemlos mit PostgreSQL / Supabase erweitert werden.
+
+---
+
+# README
+
+Erstelle eine ausführliche README mit:
+
+## Lokale Installation
+
+```bash
+npm install
+```
+
+## Development
+
+```bash
+npm run dev
+```
+
+## Production Build
+
+```bash
+npm run build
+```
+
+## Production Start
+
+```bash
+npm start
+```
+
+## Environment Variables
+
+Alle benötigten Variablen auflisten.
+
+## Render Deployment
+
+Exakt erklären:
+
+* Repository auf GitHub hochladen
+* Render Web Service erstellen
+* Build Command
+* Start Command
+* Environment Variables eintragen
+* Node Version
+* Domain verbinden
+
+---
+
+# ZIP
+
+Das Projekt muss vollständig exportierbar sein.
+
+Am Ende soll ich die gesamte Website problemlos als ZIP-Datei herunterladen können.
+
+Die ZIP muss enthalten:
+
+* Frontend
+* Backend
+* Assets
+* Logo
+* Konfiguration
+* package.json
+* README
+* `.env.example`
+* alle notwendigen Dateien
+
+Nicht enthalten:
+
+* `node_modules`
+* echte `.env`
+* temporäre Dateien
+* Build Cache
+
+---
+
+# Wichtige Vorgaben
+
+1. Keine One-Page-Website.
+2. Keine unfertigen Platzhalterseiten.
+3. Keine Lorem-Ipsum-Texte.
+4. Keine erfundenen Firmenangaben.
+5. Keine erfundenen Bewertungen.
+6. Keine erfundenen Referenzen.
+7. Keine erfundenen Mitarbeiterzahlen.
+8. Keine erfundenen Zertifikate.
+9. Keine falschen Meistertitel.
+10. Keine schlechten Stockbilder.
+11. Keine kaputten Links.
+12. Keine Navigation zu nicht vorhandenen Seiten.
+13. Alle Buttons müssen funktionieren.
+14. Alle Formulare benötigen funktionierende Validierung.
+15. Die Website muss auf Mobilgeräten vollständig funktionieren.
+16. Das Design muss auf allen Seiten konsistent sein.
+17. Die Website soll wie die Website eines professionellen technischen Unternehmens wirken.
+18. Keine optische Kopie von Wien Energie, EQUANS oder anderen Unternehmen. Nur deren Qualitätsniveau und seriöse Corporate-Web-Aufbereitung als Orientierung verwenden.
+19. Das hochgeladene WTÖ-Logo ist die Hauptmarke.
+20. Verwende UTF-8 und stelle sicher, dass **WTÖ**, **Wärme**, **Österreich** und andere Umlaute korrekt dargestellt werden.
+
+---
+
+# Inhaltliche Hauptbotschaft
+
+WTÖ soll nicht als kleiner Reparaturbetrieb dargestellt werden.
+
+Die Website soll vermitteln, dass WTÖ technische Leistungen über den gesamten Lebenszyklus einer Anlage anbieten kann:
+
+**Beratung → Planung → Errichtung → Inbetriebnahme → Wartung → Instandhaltung → Reparatur → Modernisierung**
+
+Das Leistungsspektrum umfasst:
+
+**Gebäudetechnik**
+
+**Anlagenbau**
+
+**Heizung**
+
+**Gasgeräte-Service**
+
+**Wärmepumpen**
+
+**Sanitär**
+
+**Klima**
+
+**Lüftung**
+
+**Solarthermie**
+
+**Photovoltaik**
+
+**Kanaltechnik**
+
+**Wartung**
+
+**Instandhaltung**
+
+**Reparatur**
+
+**Störungsbehebung**
+
+**Planung und Projektierung**
+
+---
+
+# Abschlussanforderung an Replit
+
+Baue nicht nur ein visuelles Mockup.
+
+Erstelle das vollständige funktionsfähige Projekt.
+
+Nach Fertigstellung:
+
+1. überprüfe alle Seiten und Routes,
+2. behebe TypeScript-Fehler,
+3. behebe Build-Fehler,
+4. überprüfe Mobile Responsive,
+5. teste die Formulare,
+6. teste den Production Build,
+7. teste `npm start`,
+8. stelle sicher, dass das Projekt Render-kompatibel ist,
+9. prüfe alle internen Links,
+10. entferne unnötigen Demo-Code,
+11. entferne ungenutzte Komponenten,
+12. erstelle eine saubere README,
+13. hinterlasse das Projekt in einem Zustand, in dem es vollständig als ZIP exportiert und anschließend auf Render deployed werden kann.
+
+**Priorität: Qualität vor Geschwindigkeit.**
+
+Die Website soll aussehen und technisch aufgebaut sein wie eine professionelle Unternehmenswebsite, die für Hausverwaltungen, Gewerbekunden, Bauträger und Privatkunden gleichermaßen vertrauenswürdig wirkt.
