@@ -134,5 +134,47 @@
 }
 @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 
-/* WTÖ Logo: transparenter Hintergrund im Footer */
+/* WTÖ Logo – sauber und responsiv */
+header [data-testid="link-logo"] {
+  width: 245px !important;
+  height: 68px !important;
+  overflow: hidden !important;
+}
+header [data-testid="link-logo"] img {
+  width: 100% !important;
+  height: 100% !important;
+  transform: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
 footer .bg-white { background-color: transparent !important; }
+footer div:has(> img[alt="Wärme & Technik Österreich"]) {
+  height: auto !important;
+  max-width: 290px !important;
+  overflow: visible !important;
+  background: transparent !important;
+  margin-bottom: 1.5rem !important;
+}
+footer img[alt="Wärme & Technik Österreich"] {
+  width: 290px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  transform: none !important;
+  object-fit: contain !important;
+  filter: brightness(0) invert(1) !important;
+  opacity: .96 !important;
+}
+
+@media (max-width: 640px) {
+  header [data-testid="link-logo"] {
+    width: 205px !important;
+    height: 58px !important;
+  }
+  footer div:has(> img[alt="Wärme & Technik Österreich"]) {
+    max-width: 245px !important;
+  }
+  footer img[alt="Wärme & Technik Österreich"] {
+    width: 245px !important;
+  }
+}
