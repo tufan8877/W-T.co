@@ -134,47 +134,68 @@
 }
 @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 
-/* WTÖ Logo – sauber und responsiv */
+/* WTÖ Brand – passend zur finalen Referenz */
 header [data-testid="link-logo"] {
-  width: 245px !important;
-  height: 68px !important;
+  width: 300px !important;
+  height: 72px !important;
   overflow: hidden !important;
+  display: block !important;
 }
 header [data-testid="link-logo"] img {
   width: 100% !important;
   height: 100% !important;
   transform: none !important;
-  object-fit: contain !important;
-  object-position: center !important;
+  object-fit: cover !important;
+  object-position: center 7% !important;
 }
 
-footer .bg-white { background-color: transparent !important; }
+footer .bg-white {
+  background-color: transparent !important;
+}
 footer div:has(> img[alt="Wärme & Technik Österreich"]) {
-  height: auto !important;
-  max-width: 290px !important;
-  overflow: visible !important;
+  width: 330px !important;
+  max-width: 100% !important;
+  height: 190px !important;
+  overflow: hidden !important;
   background: transparent !important;
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1.25rem !important;
 }
 footer img[alt="Wärme & Technik Österreich"] {
-  width: 290px !important;
-  max-width: 100% !important;
-  height: auto !important;
+  width: 100% !important;
+  height: 100% !important;
   transform: none !important;
-  object-fit: contain !important;
+  object-fit: cover !important;
+  object-position: center 42% !important;
   filter: brightness(0) invert(1) !important;
-  opacity: .96 !important;
+  opacity: .98 !important;
+}
+
+@media (max-width: 1024px) {
+  header [data-testid="link-logo"] {
+    width: 250px !important;
+    height: 66px !important;
+  }
 }
 
 @media (max-width: 640px) {
+  header > div:first-child {
+    height: 78px !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
   header [data-testid="link-logo"] {
-    width: 205px !important;
-    height: 58px !important;
+    width: 218px !important;
+    height: 64px !important;
+  }
+  header [data-testid="link-logo"] img {
+    object-position: center 6% !important;
   }
   footer div:has(> img[alt="Wärme & Technik Österreich"]) {
-    max-width: 245px !important;
+    width: 230px !important;
+    height: 150px !important;
+    margin-bottom: 1.1rem !important;
   }
   footer img[alt="Wärme & Technik Österreich"] {
-    width: 245px !important;
+    object-position: center 42% !important;
   }
 }
