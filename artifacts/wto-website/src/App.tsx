@@ -7,7 +7,7 @@ import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
-import logoUrl from '@assets/ChatGPT_Image_19._Aug._2026,_21_19_10_(1)_1787167163362.png';
+import logoUrl from '@assets/ChatGPT Image 21. Aug. 2026, 19_23_04.png';
 
 const queryClient = new QueryClient();
 const serviceImage = 'https://images.unsplash.com/photo-1581092919535-7146ff1a590e?auto=format&fit=crop&w=1600&q=85';
@@ -50,8 +50,8 @@ function Shell({ children }: { children: ReactNode }) {
   useEffect(() => setOpen(false), [location]);
   return <div className="noise min-h-[100dvh]">
     <header className="sticky top-0 z-40 border-b border-[#d6dce1]/80 bg-[#f8f7f2]/95 backdrop-blur-md">
-      <div className="mx-auto flex h-[74px] max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
-        <Link href="/" data-testid="link-logo" className="shrink-0"><img src={logoUrl} alt="WTÖ Wärme Technik Österreich" className="h-12 w-auto object-contain" /></Link>
+      <div className="mx-auto flex h-[86px] max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
+        <Link href="/" data-testid="link-logo" className="flex h-[78px] w-[230px] shrink-0 items-center overflow-hidden sm:w-[285px] lg:w-[315px]"><img src={logoUrl} alt="Wärme & Technik Österreich" className="h-[138px] w-full scale-[1.42] object-contain object-center" /></Link>
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Hauptnavigation">
           {navItems.map((item) => <Link key={item.href} href={item.href} data-testid={`link-nav-${item.label.toLowerCase()}`} className={`text-[13px] font-semibold tracking-wide transition-colors hover:text-[#f4511e] ${location.startsWith(item.href) ? 'text-[#f4511e]' : 'text-[#102f50]'}`}>{item.label}</Link>)}
           <Link href="/kontakt" data-testid="link-nav-kontakt" className="border-l border-[#cbd3d9] pl-7 text-[13px] font-semibold tracking-wide text-[#102f50] transition-colors hover:text-[#f4511e]">Kontakt</Link>
@@ -75,7 +75,7 @@ function Shell({ children }: { children: ReactNode }) {
 function Footer() {
   return <footer className="bg-[#102f50] text-[#f8f7f2]">
     <div className="mx-auto grid max-w-[1440px] gap-12 px-5 py-14 sm:px-8 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:px-12 lg:py-20">
-      <div><img src={logoUrl} alt="WTÖ Wärme Technik Österreich" className="mb-6 h-14 w-auto bg-[#f8f7f2] p-1" /><p className="max-w-xs text-sm leading-6 text-[#b9c7d3]">Wärme. Technik. Österreich.<br />Ihr technischer Partner über den gesamten Lebenszyklus.</p><Link href="/projektanfrage" data-testid="link-footer-anfrage" className="mt-7 inline-flex items-center gap-2 border border-[#f4511e] px-4 py-3 text-xs font-bold uppercase tracking-[.14em] text-[#f8f7f2] hover:bg-[#f4511e]">Projekt anfragen <ArrowRight size={14} /></Link></div>
+      <div><div className="mb-7 flex h-[130px] max-w-[360px] items-center overflow-hidden rounded-sm bg-white"><img src={logoUrl} alt="Wärme & Technik Österreich" className="h-[220px] w-full scale-[1.34] object-contain object-center" /></div><p className="max-w-xs text-sm leading-6 text-[#b9c7d3]">Wärme. Technik. Österreich.<br />Ihr technischer Partner über den gesamten Lebenszyklus.</p><Link href="/projektanfrage" data-testid="link-footer-anfrage" className="mt-7 inline-flex items-center gap-2 border border-[#f4511e] px-4 py-3 text-xs font-bold uppercase tracking-[.14em] text-[#f8f7f2] hover:bg-[#f4511e]">Projekt anfragen <ArrowRight size={14} /></Link></div>
       <div><p className="mb-5 text-[11px] font-bold uppercase tracking-[.18em] text-[#f4511e]">Leistungen</p><div className="grid gap-2 text-sm text-[#d4dde4]">{services.slice(0, 6).map((s) => <Link key={s.slug} href={`/leistungen/${s.slug}`} data-testid={`link-footer-${s.slug}`} className="hover:text-[#f4511e]">{s.title}</Link>)}</div></div>
       <div><p className="mb-5 text-[11px] font-bold uppercase tracking-[.18em] text-[#f4511e]">Unternehmen</p><div className="grid gap-2 text-sm text-[#d4dde4]"><Link href="/planung" data-testid="link-footer-planung">Planung</Link><Link href="/branchen" data-testid="link-footer-branchen">Branchen</Link><Link href="/unternehmen" data-testid="link-footer-unternehmen">Über WTÖ</Link><Link href="/karriere" data-testid="link-footer-karriere">Karriere</Link><Link href="/faq" data-testid="link-footer-faq">FAQ</Link></div></div>
       <div><p className="mb-5 text-[11px] font-bold uppercase tracking-[.18em] text-[#f4511e]">Direkt</p><div className="grid gap-3 text-sm text-[#d4dde4]"><Link href="/kontakt" data-testid="link-footer-contact" className="flex items-center gap-2 hover:text-[#f4511e]"><Phone size={15} /> Kontakt aufnehmen</Link><Link href="/kontakt" data-testid="link-footer-mail" className="flex items-center gap-2 hover:text-[#f4511e]"><Mail size={15} /> Nachricht senden</Link><span className="mt-3 border-t border-[#35516b] pt-4 text-xs leading-5 text-[#9eb1c1]">Adress- und Kontaktdaten werden hier nach Unternehmensfreigabe ergänzt.</span></div></div>
