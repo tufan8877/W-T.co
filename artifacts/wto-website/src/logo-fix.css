@@ -61,6 +61,11 @@ footer > div:first-child > div:first-child {
   text-align: left !important;
 }
 
+/* Remove footer tagline below the logo. */
+footer div:has(> img[alt="Wärme & Technik Österreich"]) + p {
+  display: none !important;
+}
+
 footer div:has(> img[alt="Wärme & Technik Österreich"]) {
   display: flex !important;
   align-items: center !important;
