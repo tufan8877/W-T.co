@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 290" role="img" aria-labelledby="title desc">
+  <title>WTÖ Wärme Technik Österreich</title>
+  <desc>WTÖ Wärme Technik Österreich</desc>
+  <defs>
+    <style>
+      .navy{fill:#103b74}.orange{fill:#f57c20}.red{fill:#ef4a2e}.line{stroke:#ef8a3a;stroke-width:5;stroke-linecap:round}
+      .big{font-family:Arial,Helvetica,sans-serif;font-weight:800;letter-spacing:2px}.small{font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:2.8px}.tiny{font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:1.6px}.domain{font-family:Arial,Helvetica,sans-serif;font-weight:800;letter-spacing:1px}
+    </style>
+  </defs>
+  <polygon class="navy" points="35,32 86,32 152,175 112,240 35,32"/>
+  <polygon class="navy" points="103,116 146,86 188,174 150,240 103,116"/>
+  <polygon class="navy" points="148,32 307,32 286,74 171,74"/>
+  <polygon class="orange" points="176,106 215,106 262,208 224,208"/>
+  <polygon class="orange" points="219,106 258,106 304,208 266,208"/>
+  <polygon class="red" points="260,106 299,106 344,208 306,208"/>
+  <text x="380" y="84" class="big navy" font-size="74">WÄRME</text>
+  <text x="735" y="84" class="big orange" font-size="74">&amp;</text>
+  <text x="380" y="160" class="big navy" font-size="74">TECHNIK</text>
+  <line x1="470" y1="202" x2="525" y2="202" class="line"/>
+  <line x1="708" y1="202" x2="763" y2="202" class="line"/>
+  <text x="540" y="212" class="small navy" font-size="30">ÖSTERREICH</text>
+  <text x="22" y="252" class="tiny navy" font-size="20">GEBÄUDETECHNIK</text><text x="234" y="252" class="tiny navy" font-size="20">|</text><text x="275" y="252" class="tiny navy" font-size="20">ANLAGENBAU</text><text x="492" y="252" class="tiny navy" font-size="20">|</text><text x="535" y="252" class="tiny navy" font-size="20">ENERGIETECHNIK</text><text x="808" y="252" class="tiny navy" font-size="20">|</text><text x="850" y="252" class="tiny navy" font-size="20">SERVICE</text>
+  <line x1="420" y1="276" x2="500" y2="276" class="line"/><line x1="627" y1="276" x2="707" y2="276" class="line"/>
+  <text x="517" y="283" class="domain navy" font-size="32">wt.co.at</text>
+</svg>
