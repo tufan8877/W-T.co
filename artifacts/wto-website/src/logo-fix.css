@@ -61,9 +61,18 @@ footer > div:first-child > div:first-child {
   text-align: left !important;
 }
 
-/* Remove footer tagline below the logo. */
+/* Keep only the second footer tagline line. */
 footer div:has(> img[alt="Wärme & Technik Österreich"]) + p {
-  display: none !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+
+footer div:has(> img[alt="Wärme & Technik Österreich"]) + p::after {
+  content: 'Ihr technischer Partner über den gesamten Lebenszyklus.';
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #b9c7d3;
 }
 
 footer div:has(> img[alt="Wärme & Technik Österreich"]) {
