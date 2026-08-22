@@ -64,11 +64,11 @@ footer > div:first-child > div:first-child {
 footer div:has(> img[alt="Wärme & Technik Österreich"]) {
   display: flex !important;
   align-items: center !important;
-  justify-content: flex-start !important;
+  justify-content: center !important;
   width: 270px !important;
   max-width: 100% !important;
   height: 96px !important;
-  margin: 0 0 1.75rem 0 !important;
+  margin: 0 auto 1.75rem auto !important;
   padding: 0 !important;
   overflow: visible !important;
   background: transparent !important;
@@ -84,11 +84,11 @@ footer img[alt="Wärme & Technik Österreich"] {
   max-width: 100% !important;
   height: 88px !important;
   max-height: 88px !important;
-  margin: 0 !important;
+  margin: 0 auto !important;
   object-fit: contain !important;
-  object-position: left center !important;
+  object-position: center center !important;
   transform: none !important;
-  transform-origin: left center !important;
+  transform-origin: center center !important;
   opacity: 1 !important;
   filter: brightness(0) invert(1) !important;
 }
@@ -209,7 +209,7 @@ footer img[alt="Wärme & Technik Österreich"] {
     width: 235px !important;
     max-width: 235px !important;
     height: 86px !important;
-    margin: 0 0 1.5rem 0 !important;
+    margin: 0 auto 1.5rem auto !important;
   }
 
   footer img[alt="Wärme & Technik Österreich"] {
@@ -217,6 +217,6 @@ footer img[alt="Wärme & Technik Österreich"] {
     max-width: 235px !important;
     height: 80px !important;
     max-height: 80px !important;
-    object-position: left center !important;
+    object-position: center center !important;
   }
 }
