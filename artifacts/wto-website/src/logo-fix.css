@@ -1,43 +1,57 @@
-/* Unified WTÖ logo layout — header + footer, desktop + mobile */
+/* WTÖ logo layout — final header fix + working footer */
 
 /* HEADER -------------------------------------------------------------- */
 header > div:first-child {
-  position: relative !important;
+  width: 100% !important;
+  max-width: 1440px !important;
+  min-height: 82px !important;
+  height: 82px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
 }
 
 header [data-testid="link-logo"] {
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
-  width: 230px !important;
-  max-width: 230px !important;
-  height: 72px !important;
-  flex: 0 0 230px !important;
-  margin: 0 auto 0 0 !important;
+  width: 250px !important;
+  max-width: 250px !important;
+  min-width: 0 !important;
+  height: 64px !important;
+  max-height: 64px !important;
+  flex: 0 0 250px !important;
+  margin: 0 !important;
   padding: 0 !important;
-  overflow: visible !important;
+  overflow: hidden !important;
 }
 
 header [data-testid="link-logo"] img {
   display: block !important;
-  width: auto !important;
-  max-width: 100% !important;
-  height: 66px !important;
-  max-height: 66px !important;
+  width: 250px !important;
+  max-width: 250px !important;
+  min-width: 0 !important;
+  height: 64px !important;
+  max-height: 64px !important;
   margin: 0 !important;
+  padding: 0 !important;
   object-fit: contain !important;
   object-position: left center !important;
   transform: none !important;
-  transform-origin: left center !important;
+  scale: 1 !important;
 }
 
-/* Keep navigation/menu pushed to the right while logo stays left. */
-header nav[aria-label="Hauptnavigation"],
-header button[data-testid="button-mobile-menu"] {
+header nav[aria-label="Hauptnavigation"] {
   margin-left: auto !important;
 }
 
-/* FOOTER -------------------------------------------------------------- */
+header button[data-testid="button-mobile-menu"] {
+  margin-left: auto !important;
+  flex-shrink: 0 !important;
+}
+
+/* FOOTER — leave the currently working layout intact ------------------ */
 footer > div:first-child > div:first-child {
   text-align: left !important;
 }
@@ -69,31 +83,26 @@ footer img[alt="Wärme & Technik Österreich"] {
   transform-origin: left center !important;
 }
 
-/* TABLET -------------------------------------------------------------- */
-@media (min-width: 641px) and (max-width: 1023px) {
-  header [data-testid="link-logo"] {
-    width: 260px !important;
-    max-width: 260px !important;
-    flex-basis: 260px !important;
-  }
-
-  header [data-testid="link-logo"] img {
-    height: 70px !important;
-    max-height: 70px !important;
-  }
-}
-
 /* DESKTOP ------------------------------------------------------------- */
 @media (min-width: 1024px) {
+  header > div:first-child {
+    min-height: 88px !important;
+    height: 88px !important;
+  }
+
   header [data-testid="link-logo"] {
-    width: 285px !important;
-    max-width: 285px !important;
-    flex-basis: 285px !important;
+    width: 270px !important;
+    max-width: 270px !important;
+    height: 68px !important;
+    max-height: 68px !important;
+    flex-basis: 270px !important;
   }
 
   header [data-testid="link-logo"] img {
-    height: 72px !important;
-    max-height: 72px !important;
+    width: 270px !important;
+    max-width: 270px !important;
+    height: 68px !important;
+    max-height: 68px !important;
   }
 
   footer div:has(> img[alt="Wärme & Technik Österreich"]) {
@@ -107,39 +116,70 @@ footer img[alt="Wärme & Technik Österreich"] {
   }
 }
 
-/* MOBILE -------------------------------------------------------------- */
-@media (max-width: 640px) {
+/* TABLET -------------------------------------------------------------- */
+@media (min-width: 641px) and (max-width: 1023px) {
   header > div:first-child {
-    min-height: 88px !important;
-    height: 88px !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    gap: 14px !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
+    min-height: 82px !important;
+    height: 82px !important;
   }
 
   header [data-testid="link-logo"] {
-    width: 190px !important;
-    max-width: 190px !important;
-    height: 68px !important;
-    flex: 0 0 190px !important;
-    margin: 0 auto 0 0 !important;
+    width: 230px !important;
+    max-width: 230px !important;
+    height: 60px !important;
+    max-height: 60px !important;
+    flex-basis: 230px !important;
   }
 
   header [data-testid="link-logo"] img {
-    width: auto !important;
-    max-width: 190px !important;
-    height: 62px !important;
-    max-height: 62px !important;
+    width: 230px !important;
+    max-width: 230px !important;
+    height: 60px !important;
+    max-height: 60px !important;
+  }
+}
+
+/* MOBILE -------------------------------------------------------------- */
+@media (max-width: 640px) {
+  header > div:first-child {
+    min-height: 74px !important;
+    height: 74px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    gap: 12px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  header [data-testid="link-logo"] {
+    width: 178px !important;
+    max-width: 178px !important;
+    height: 54px !important;
+    max-height: 54px !important;
+    flex: 0 0 178px !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+  }
+
+  header [data-testid="link-logo"] img {
+    width: 178px !important;
+    max-width: 178px !important;
+    height: 54px !important;
+    max-height: 54px !important;
+    object-fit: contain !important;
     object-position: left center !important;
+    transform: none !important;
+    scale: 1 !important;
   }
 
   header button[data-testid="button-mobile-menu"] {
-    width: 46px !important;
-    height: 46px !important;
-    flex: 0 0 46px !important;
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    max-width: 42px !important;
+    flex: 0 0 42px !important;
     margin-left: auto !important;
+    padding: 8px !important;
   }
 
   footer > div:first-child {
