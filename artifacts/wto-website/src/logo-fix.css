@@ -71,14 +71,11 @@ footer div:has(> img[alt="Wärme & Technik Österreich"]) {
   margin: 0 0 1.75rem 0 !important;
   padding: 0 !important;
   overflow: visible !important;
-  background-color: transparent !important;
-  background-image: url('/wto-logo-footer.svg') !important;
-  background-repeat: no-repeat !important;
-  background-position: left center !important;
-  background-size: contain !important;
+  background: transparent !important;
   border-radius: 0 !important;
 }
 
+/* Safari-safe footer: use the real original logo element directly. */
 footer img[alt="Wärme & Technik Österreich"] {
   display: block !important;
   width: auto !important;
@@ -90,7 +87,8 @@ footer img[alt="Wärme & Technik Österreich"] {
   object-position: left center !important;
   transform: none !important;
   transform-origin: left center !important;
-  opacity: 0 !important;
+  opacity: 1 !important;
+  filter: brightness(0) invert(1) !important;
 }
 
 /* DESKTOP ------------------------------------------------------------- */
