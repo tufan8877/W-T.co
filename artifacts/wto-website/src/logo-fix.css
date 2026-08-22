@@ -152,24 +152,28 @@ footer img[alt="Wärme & Technik Österreich"] {
 /* MOBILE -------------------------------------------------------------- */
 @media (max-width: 640px) {
   header > div:first-child {
+    position: relative !important;
     min-height: 74px !important;
     height: 74px !important;
-    padding-left: 0 !important;
+    padding-left: 16px !important;
     padding-right: 16px !important;
     gap: 12px !important;
     align-items: center !important;
-    justify-content: space-between !important;
+    justify-content: flex-end !important;
   }
 
   header [data-testid="link-logo"] {
+    position: absolute !important;
+    left: 16px !important;
+    top: 50% !important;
     width: 178px !important;
     max-width: 178px !important;
     height: 54px !important;
     max-height: 54px !important;
-    flex: 0 0 178px !important;
+    flex: none !important;
     margin: 0 !important;
-    overflow: visible !important;
-    transform: translateX(-32px) !important;
+    overflow: hidden !important;
+    transform: translateY(-50%) !important;
     background-position: left center !important;
   }
 
@@ -185,6 +189,8 @@ footer img[alt="Wärme & Technik Österreich"] {
   }
 
   header button[data-testid="button-mobile-menu"] {
+    position: relative !important;
+    z-index: 2 !important;
     width: 42px !important;
     height: 42px !important;
     min-width: 42px !important;
