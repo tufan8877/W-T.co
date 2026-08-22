@@ -75,8 +75,10 @@ footer div:has(> img[alt="Wärme & Technik Österreich"]) {
   border-radius: 0 !important;
 }
 
-/* Safari-safe footer: use the real original logo element directly. */
+/* Footer uses the exact same real vector file as the header.
+   No SVG-in-SVG reference and no PNG fallback, so Safari stays reliable. */
 footer img[alt="Wärme & Technik Österreich"] {
+  content: url('/wto-logo-header.svg') !important;
   display: block !important;
   width: auto !important;
   max-width: 100% !important;
