@@ -12,19 +12,17 @@
 @layer utilities { .eyebrow{font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:hsl(var(--accent));}.display{font-family:var(--app-font-serif);font-weight:600;letter-spacing:-.025em;line-height:.93;}.technical-grid{background-image:linear-gradient(rgba(17,43,72,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(17,43,72,.07) 1px,transparent 1px);background-size:28px 28px;}.noise::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.028;z-index:50;background-image:repeating-linear-gradient(0deg,rgba(16,47,80,.22) 0,rgba(16,47,80,.22) 1px,transparent 1px,transparent 4px);}.animate-rise{animation:rise .7s cubic-bezier(.22,1,.36,1) both;}.delay-1{animation-delay:.1s}.delay-2{animation-delay:.2s}.delay-3{animation-delay:.3s} }
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 
-/* WTÖ Branding – Logo vollständig sichtbar, mittig und ohne Beschnitt */
-header > div:first-child{
-  min-height:92px!important;
-}
+/* WTÖ Branding: proportional, centered and never cropped */
+header > div:first-child{min-height:88px!important;}
 header [data-testid="link-logo"]{
-  width:300px!important;
-  max-width:40vw!important;
-  height:82px!important;
+  width:270px!important;
+  height:72px!important;
+  max-width:none!important;
   overflow:visible!important;
   display:flex!important;
   align-items:center!important;
-  justify-content:center!important;
-  flex-shrink:0!important;
+  justify-content:flex-start!important;
+  flex:0 0 auto!important;
   margin:0!important;
   padding:0!important;
 }
@@ -36,22 +34,18 @@ header [data-testid="link-logo"] img{
   max-height:100%!important;
   transform:none!important;
   object-fit:contain!important;
-  object-position:center center!important;
-  margin:0 auto!important;
+  object-position:left center!important;
+  margin:0!important;
 }
 
-footer .bg-white{
-  background:transparent!important;
-  height:auto!important;
-  overflow:visible!important;
-}
+footer .bg-white{background:transparent!important;height:auto!important;overflow:visible!important;}
 footer div:has(> img[alt="Wärme & Technik Österreich"]){
-  width:330px!important;
+  width:285px!important;
   max-width:100%!important;
   height:auto!important;
   overflow:visible!important;
   background:transparent!important;
-  margin-bottom:1.5rem!important;
+  margin:0 0 1.5rem 0!important;
 }
 footer img[alt="Wärme & Technik Österreich"]{
   display:block!important;
@@ -60,52 +54,55 @@ footer img[alt="Wärme & Technik Österreich"]{
   max-width:100%!important;
   transform:none!important;
   object-fit:contain!important;
-  object-position:center center!important;
+  object-position:left center!important;
   filter:brightness(0) invert(1)!important;
   opacity:.97!important;
   margin:0!important;
 }
 
 @media(max-width:1024px){
-  header [data-testid="link-logo"]{
-    width:270px!important;
-    max-width:48vw!important;
-    height:78px!important;
-  }
+  header [data-testid="link-logo"]{width:225px!important;height:68px!important;}
 }
 
 @media(max-width:640px){
   header > div:first-child{
-    height:112px!important;
-    min-height:112px!important;
-    padding-left:22px!important;
-    padding-right:22px!important;
-    gap:14px!important;
+    height:118px!important;
+    min-height:118px!important;
+    padding:0 18px!important;
+    gap:12px!important;
+    justify-content:space-between!important;
+    align-items:center!important;
   }
   header [data-testid="link-logo"]{
-    width:245px!important;
-    max-width:calc(100vw - 112px)!important;
-    height:96px!important;
+    width:198px!important;
+    height:88px!important;
+    max-width:calc(100vw - 104px)!important;
+    flex:0 0 auto!important;
     overflow:visible!important;
-    margin-left:0!important;
+    margin:0!important;
   }
   header [data-testid="link-logo"] img{
     width:100%!important;
     height:100%!important;
+    max-width:100%!important;
+    max-height:100%!important;
     object-fit:contain!important;
-    object-position:center center!important;
+    object-position:left center!important;
+    transform:none!important;
   }
   header button[data-testid="button-mobile-menu"]{
-    width:54px!important;
-    height:54px!important;
-    flex:0 0 54px!important;
+    width:48px!important;
+    height:48px!important;
+    flex:0 0 48px!important;
+    padding:0!important;
     display:flex!important;
     align-items:center!important;
     justify-content:center!important;
   }
+  footer > div:first-child{padding-left:28px!important;padding-right:28px!important;}
   footer div:has(> img[alt="Wärme & Technik Österreich"]){
-    width:300px!important;
-    max-width:calc(100vw - 44px)!important;
+    width:252px!important;
+    max-width:calc(100vw - 56px)!important;
     height:auto!important;
     margin:0 auto 1.6rem 0!important;
   }
@@ -113,6 +110,6 @@ footer img[alt="Wärme & Technik Österreich"]{
     width:100%!important;
     height:auto!important;
     object-fit:contain!important;
-    object-position:center center!important;
+    object-position:left center!important;
   }
 }
