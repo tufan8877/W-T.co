@@ -1,25 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 290" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" role="img" aria-labelledby="title desc">
   <title>WTÖ Wärme Technik Österreich</title>
-  <desc>WTÖ Wärme Technik Österreich</desc>
+  <desc>WTÖ Wärme Technik Österreich – Gebäudetechnik, Anlagenbau, Energietechnik, Service</desc>
   <defs>
     <style>
-      .navy{fill:#103b74}.orange{fill:#f57c20}.red{fill:#ef4a2e}.line{stroke:#ef8a3a;stroke-width:5;stroke-linecap:round}
-      .big{font-family:Arial,Helvetica,sans-serif;font-weight:800;letter-spacing:2px}.small{font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:2.8px}.tiny{font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:1.6px}.domain{font-family:Arial,Helvetica,sans-serif;font-weight:800;letter-spacing:1px}
+      .blue{fill:#103f7b}
+      .orange{fill:#f58220}
+      .red{fill:#ef3d23}
+      .word{font-family:Arial,Helvetica,sans-serif;font-weight:900;letter-spacing:2px}
+      .country{font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:12px}
+      .service{font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:2px}
+      .domain{font-family:Arial,Helvetica,sans-serif;font-weight:800;letter-spacing:1px}
     </style>
   </defs>
-  <polygon class="navy" points="35,32 86,32 152,175 112,240 35,32"/>
-  <polygon class="navy" points="103,116 146,86 188,174 150,240 103,116"/>
-  <polygon class="navy" points="148,32 307,32 286,74 171,74"/>
-  <polygon class="orange" points="176,106 215,106 262,208 224,208"/>
-  <polygon class="orange" points="219,106 258,106 304,208 266,208"/>
-  <polygon class="red" points="260,106 299,106 344,208 306,208"/>
-  <text x="380" y="84" class="big navy" font-size="74">WÄRME</text>
-  <text x="735" y="84" class="big orange" font-size="74">&amp;</text>
-  <text x="380" y="160" class="big navy" font-size="74">TECHNIK</text>
-  <line x1="470" y1="202" x2="525" y2="202" class="line"/>
-  <line x1="708" y1="202" x2="763" y2="202" class="line"/>
-  <text x="540" y="212" class="small navy" font-size="30">ÖSTERREICH</text>
-  <text x="22" y="252" class="tiny navy" font-size="20">GEBÄUDETECHNIK</text><text x="234" y="252" class="tiny navy" font-size="20">|</text><text x="275" y="252" class="tiny navy" font-size="20">ANLAGENBAU</text><text x="492" y="252" class="tiny navy" font-size="20">|</text><text x="535" y="252" class="tiny navy" font-size="20">ENERGIETECHNIK</text><text x="808" y="252" class="tiny navy" font-size="20">|</text><text x="850" y="252" class="tiny navy" font-size="20">SERVICE</text>
-  <line x1="420" y1="276" x2="500" y2="276" class="line"/><line x1="627" y1="276" x2="707" y2="276" class="line"/>
-  <text x="517" y="283" class="domain navy" font-size="32">wt.co.at</text>
+
+  <!-- Original-style WT emblem -->
+  <polygon class="blue" points="55,38 125,38 225,282 273,210 323,292 365,230 414,305 350,410 280,300 215,410 55,38"/>
+  <polygon class="blue" points="170,38 500,38 455,108 212,108"/>
+  <polygon class="blue" points="235,110 315,110 365,195 315,275 235,110"/>
+  <polygon class="orange" points="330,205 385,205 495,397 430,397"/>
+  <polygon class="orange" points="390,205 445,205 555,397 490,397"/>
+  <polygon class="red" points="450,205 505,205 615,397 550,397"/>
+
+  <!-- Main wordmark -->
+  <text x="650" y="145" class="word blue" font-size="112">WÄRME</text>
+  <text x="1210" y="145" class="word orange" font-size="112">&amp;</text>
+  <text x="650" y="278" class="word blue" font-size="112">TECHNIK</text>
+
+  <!-- Austria line -->
+  <rect x="650" y="321" width="145" height="7" rx="3.5" class="orange"/>
+  <text x="825" y="342" class="country blue" font-size="38">ÖSTERREICH</text>
+  <rect x="1267" y="321" width="145" height="7" rx="3.5" class="orange"/>
+
+  <!-- Service row -->
+  <text x="38" y="438" class="service blue" font-size="26">GEBÄUDETECHNIK</text>
+  <rect x="335" y="405" width="5" height="40" class="orange"/>
+  <text x="370" y="438" class="service blue" font-size="26">ANLAGENBAU</text>
+  <rect x="605" y="405" width="5" height="40" class="orange"/>
+  <text x="640" y="438" class="service blue" font-size="26">ENERGIETECHNIK</text>
+  <rect x="1005" y="405" width="5" height="40" class="orange"/>
+  <text x="1040" y="438" class="service blue" font-size="26">SERVICE</text>
+
+  <!-- Domain -->
+  <rect x="465" y="473" width="190" height="7" rx="3.5" class="orange"/>
+  <text x="685" y="489" class="domain blue" font-size="45">wt.co.at</text>
+  <rect x="875" y="473" width="190" height="7" rx="3.5" class="orange"/>
 </svg>
