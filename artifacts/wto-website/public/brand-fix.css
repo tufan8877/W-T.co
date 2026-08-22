@@ -79,7 +79,7 @@ footer img[alt="Wärme & Technik Österreich"] {
   }
 }
 
-/* Mobile: Logo exakt mittig, Menü rechts */
+/* Mobile: Logo bewusst weiter links, Menü bleibt rechts */
 @media (max-width: 640px) {
   header > div:first-child {
     position: relative !important;
@@ -93,7 +93,7 @@ footer img[alt="Wärme & Technik Österreich"] {
 
   header [data-testid="link-logo"] {
     position: absolute !important;
-    left: 50% !important;
+    left: 43% !important;
     top: 50% !important;
     transform: translate(-50%, -50%) !important;
     width: 230px !important;
