@@ -167,8 +167,10 @@ footer img[alt="Wärme & Technik Österreich"] {
     height: 54px !important;
     max-height: 54px !important;
     flex: 0 0 178px !important;
-    margin: 0 0 0 -14px !important;
-    overflow: hidden !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    transform: translateX(-32px) !important;
+    background-position: left center !important;
   }
 
   header [data-testid="link-logo"] img {
