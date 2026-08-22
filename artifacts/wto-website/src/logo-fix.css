@@ -1,0 +1,60 @@
+/* Final mobile logo layout overrides */
+@media (max-width: 640px) {
+  header > div:first-child {
+    min-height: 108px !important;
+    height: 108px !important;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+    gap: 14px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  header [data-testid="link-logo"] {
+    width: 158px !important;
+    height: 82px !important;
+    max-width: 158px !important;
+    flex: 0 0 158px !important;
+    overflow: visible !important;
+    margin: 0 !important;
+  }
+
+  header [data-testid="link-logo"] img {
+    width: 158px !important;
+    height: 82px !important;
+    max-width: 158px !important;
+    max-height: 82px !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+    transform: none !important;
+  }
+
+  header button[data-testid="button-mobile-menu"] {
+    width: 52px !important;
+    height: 52px !important;
+    flex: 0 0 52px !important;
+    margin-left: auto !important;
+  }
+
+  footer > div:first-child {
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+  }
+
+  footer div:has(> img[alt="Wärme & Technik Österreich"]) {
+    width: 210px !important;
+    max-width: 210px !important;
+    margin: 0 auto 1.6rem auto !important;
+    overflow: visible !important;
+    background: transparent !important;
+  }
+
+  footer img[alt="Wärme & Technik Österreich"] {
+    width: 210px !important;
+    max-width: 210px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    transform: none !important;
+  }
+}
