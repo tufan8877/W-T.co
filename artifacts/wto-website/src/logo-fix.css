@@ -1,4 +1,4 @@
-/* WTÖ logo layout — final header fix + working footer */
+/* WTÖ logo layout — SVG quality upgrade, layout unchanged */
 
 /* HEADER -------------------------------------------------------------- */
 header > div:first-child {
@@ -25,6 +25,10 @@ header [data-testid="link-logo"] {
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden !important;
+  background-image: url('/wto-logo-header.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
 }
 
 header [data-testid="link-logo"] img {
@@ -40,6 +44,7 @@ header [data-testid="link-logo"] img {
   object-position: left center !important;
   transform: none !important;
   scale: 1 !important;
+  opacity: 0 !important;
 }
 
 header nav[aria-label="Hauptnavigation"] {
@@ -51,7 +56,7 @@ header button[data-testid="button-mobile-menu"] {
   flex-shrink: 0 !important;
 }
 
-/* FOOTER — leave the currently working layout intact ------------------ */
+/* FOOTER -------------------------------------------------------------- */
 footer > div:first-child > div:first-child {
   text-align: left !important;
 }
@@ -66,7 +71,11 @@ footer div:has(> img[alt="Wärme & Technik Österreich"]) {
   margin: 0 0 1.75rem 0 !important;
   padding: 0 !important;
   overflow: visible !important;
-  background: transparent !important;
+  background-color: transparent !important;
+  background-image: url('/wto-logo-footer.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   border-radius: 0 !important;
 }
 
@@ -81,6 +90,7 @@ footer img[alt="Wärme & Technik Österreich"] {
   object-position: left center !important;
   transform: none !important;
   transform-origin: left center !important;
+  opacity: 0 !important;
 }
 
 /* DESKTOP ------------------------------------------------------------- */
