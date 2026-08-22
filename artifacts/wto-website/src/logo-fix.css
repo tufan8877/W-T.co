@@ -154,7 +154,7 @@ footer img[alt="Wärme & Technik Österreich"] {
   header > div:first-child {
     min-height: 74px !important;
     height: 74px !important;
-    padding-left: 16px !important;
+    padding-left: 0 !important;
     padding-right: 16px !important;
     gap: 12px !important;
     align-items: center !important;
@@ -167,7 +167,7 @@ footer img[alt="Wärme & Technik Österreich"] {
     height: 54px !important;
     max-height: 54px !important;
     flex: 0 0 178px !important;
-    margin: 0 !important;
+    margin: 0 0 0 -14px !important;
     overflow: hidden !important;
   }
 
