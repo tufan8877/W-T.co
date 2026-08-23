@@ -1,0 +1,51 @@
+/* Slightly larger header logo only. Footer remains unchanged. */
+
+@media (min-width: 1024px) {
+  header [data-testid="link-logo"] {
+    width: 325px !important;
+    max-width: 325px !important;
+    height: 76px !important;
+    max-height: 76px !important;
+    flex-basis: 325px !important;
+  }
+
+  header [data-testid="link-logo"] img {
+    width: 325px !important;
+    max-width: 325px !important;
+    height: 76px !important;
+    max-height: 76px !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  header [data-testid="link-logo"] {
+    width: 260px !important;
+    max-width: 260px !important;
+    height: 63px !important;
+    max-height: 63px !important;
+    flex-basis: 260px !important;
+  }
+
+  header [data-testid="link-logo"] img {
+    width: 260px !important;
+    max-width: 260px !important;
+    height: 63px !important;
+    max-height: 63px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  header [data-testid="link-logo"] {
+    width: 210px !important;
+    max-width: 210px !important;
+    height: 52px !important;
+    max-height: 52px !important;
+  }
+
+  header [data-testid="link-logo"] img {
+    width: 210px !important;
+    max-width: 210px !important;
+    height: 52px !important;
+    max-height: 52px !important;
+  }
+}
