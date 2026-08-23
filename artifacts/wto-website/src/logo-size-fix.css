@@ -9,17 +9,18 @@ header [data-testid="link-logo"] {
   header [data-testid="link-logo"] {
     width: 325px !important;
     max-width: 325px !important;
-    height: 76px !important;
-    max-height: 76px !important;
+    height: 82px !important;
+    max-height: 82px !important;
     flex-basis: 325px !important;
     background-size: 100% auto !important;
+    background-position: left center !important;
   }
 
   header [data-testid="link-logo"] img {
     width: 325px !important;
     max-width: 325px !important;
-    height: 76px !important;
-    max-height: 76px !important;
+    height: 82px !important;
+    max-height: 82px !important;
   }
 }
 
