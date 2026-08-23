@@ -1,59 +1,59 @@
-/* Larger header logo only. Footer remains unchanged. */
+/* Balanced header logo size only. Footer remains unchanged. */
 
 header [data-testid="link-logo"] {
-  background-size: 112% auto !important;
+  background-size: 100% auto !important;
   background-position: left center !important;
 }
 
 @media (min-width: 1024px) {
   header [data-testid="link-logo"] {
-    width: 365px !important;
-    max-width: 365px !important;
-    height: 82px !important;
-    max-height: 82px !important;
-    flex-basis: 365px !important;
-    background-size: 112% auto !important;
+    width: 325px !important;
+    max-width: 325px !important;
+    height: 76px !important;
+    max-height: 76px !important;
+    flex-basis: 325px !important;
+    background-size: 100% auto !important;
   }
 
   header [data-testid="link-logo"] img {
-    width: 365px !important;
-    max-width: 365px !important;
-    height: 82px !important;
-    max-height: 82px !important;
+    width: 325px !important;
+    max-width: 325px !important;
+    height: 76px !important;
+    max-height: 76px !important;
   }
 }
 
 @media (min-width: 641px) and (max-width: 1023px) {
   header [data-testid="link-logo"] {
-    width: 295px !important;
-    max-width: 295px !important;
-    height: 70px !important;
-    max-height: 70px !important;
-    flex-basis: 295px !important;
-    background-size: 112% auto !important;
+    width: 265px !important;
+    max-width: 265px !important;
+    height: 64px !important;
+    max-height: 64px !important;
+    flex-basis: 265px !important;
+    background-size: 100% auto !important;
   }
 
   header [data-testid="link-logo"] img {
-    width: 295px !important;
-    max-width: 295px !important;
-    height: 70px !important;
-    max-height: 70px !important;
+    width: 265px !important;
+    max-width: 265px !important;
+    height: 64px !important;
+    max-height: 64px !important;
   }
 }
 
 @media (max-width: 640px) {
   header [data-testid="link-logo"] {
-    width: 238px !important;
-    max-width: 238px !important;
-    height: 58px !important;
-    max-height: 58px !important;
-    background-size: 112% auto !important;
+    width: 215px !important;
+    max-width: 215px !important;
+    height: 52px !important;
+    max-height: 52px !important;
+    background-size: 100% auto !important;
   }
 
   header [data-testid="link-logo"] img {
-    width: 238px !important;
-    max-width: 238px !important;
-    height: 58px !important;
-    max-height: 58px !important;
+    width: 215px !important;
+    max-width: 215px !important;
+    height: 52px !important;
+    max-height: 52px !important;
   }
 }
