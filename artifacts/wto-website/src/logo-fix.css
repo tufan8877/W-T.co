@@ -25,10 +25,10 @@ header [data-testid="link-logo"] {
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden !important;
-  background-image: url('/wto-logo-header.svg') !important;
+  background-image: url('/wto-logo-header-compact.svg') !important;
   background-repeat: no-repeat !important;
-  background-position: left top !important;
-  background-size: 100% auto !important;
+  background-position: left center !important;
+  background-size: contain !important;
 }
 
 header [data-testid="link-logo"] img {
@@ -189,8 +189,6 @@ a[data-testid="link-service-sanitaer"]::before {
     height: 66px !important;
     max-height: 66px !important;
     flex-basis: 270px !important;
-    background-size: 100% auto !important;
-    background-position: left top !important;
   }
 
   header [data-testid="link-logo"] img {
@@ -224,8 +222,6 @@ a[data-testid="link-service-sanitaer"]::before {
     height: 57px !important;
     max-height: 57px !important;
     flex-basis: 230px !important;
-    background-size: 100% auto !important;
-    background-position: left top !important;
   }
 
   header [data-testid="link-logo"] img {
@@ -261,8 +257,8 @@ a[data-testid="link-service-sanitaer"]::before {
     margin: 0 !important;
     overflow: hidden !important;
     transform: translateY(-50%) !important;
-    background-size: 100% auto !important;
-    background-position: left top !important;
+    background-position: left center !important;
+    background-size: contain !important;
   }
 
   header [data-testid="link-logo"] img {
