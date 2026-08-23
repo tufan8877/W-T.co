@@ -56,6 +56,12 @@ header button[data-testid="button-mobile-menu"] {
   flex-shrink: 0 !important;
 }
 
+/* HOMEPAGE ------------------------------------------------------------ */
+/* Hide only the orange WTÖ eyebrow above the main homepage headline. */
+main > section:first-child .animate-rise > p.eyebrow {
+  display: none !important;
+}
+
 /* FOOTER -------------------------------------------------------------- */
 footer > div:first-child > div:first-child {
   text-align: left !important;
